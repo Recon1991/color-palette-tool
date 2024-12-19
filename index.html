@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Color Palette Tool</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Saved Palettes</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="color-display">
+            <!-- Dynamic palette preview will go here -->
+        </section>
+
+        <section id="color-input">
+            <div>
+                <label for="hex-code">HEX:</label>
+                <input type="text" id="hex-code" placeholder="#FFFFFF">
+            </div>
+            <div>
+                <label for="rgb-code">RGB:</label>
+                <input type="text" id="rgb-code" placeholder="255, 255, 255">
+            </div>
+            <div>
+                <label for="hsl-code">HSL:</label>
+                <input type="text" id="hsl-code" placeholder="0, 100%, 100%">
+            </div>
+        </section>
+
+        <section id="tools">
+            <button id="generate-palette">Generate Palette</button>
+            <button id="lock-colors">Lock Colors</button>
+            <button id="apply-harmony">Apply Harmony</button>
+        </section>
+
+        <aside id="sidebar">
+            <div id="saved-palettes">
+                <h3>Saved Palettes</h3>
+                <!-- Saved palettes preview will go here -->
+            </div>
+            <div id="palette-history">
+                <h3>Palette History</h3>
+                <!-- Undo/redo actions will go here -->
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#">Export JSON</a>
+            <a href="#">Download PNG</a>
+        </div>
+        <div>
+            <a href="#">Contact</a>
+            <a href="#">Support</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
